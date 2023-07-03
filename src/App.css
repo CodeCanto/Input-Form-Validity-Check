@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgb(122, 120, 120);
+}
