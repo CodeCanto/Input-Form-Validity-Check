@@ -4,18 +4,18 @@ import AddUserForm from "./components/Users/AddUserForm";
 import UserList from "./components/Users/UserList";
 
 function App() {
-  const [userList, setUserList] = useState([]);
+  const [userListData, setUserListData] = useState([]);
 
   function updateUserList(input) {
-    setUserList((prevUserList) => {
-      [...prevUserList, input];
+    setUserListData((prevUserListData) => {
+      return [...prevUserListData, input];
     });
   }
 
   return (
     <>
       <AddUserForm updateUserList={updateUserList} />
-      <UserList userList={userList} />
+      <UserList userListData={userListData} />
     </>
   );
 }
